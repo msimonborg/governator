@@ -22,9 +22,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'faraday'
-  spec.add_dependency 'twitter'
-  spec.add_dependency 'nokogiri'
+  spec.add_dependency 'faraday', '~> 0.11.0'
+  spec.add_dependency 'twitter', '~> 6.1.0'
+  spec.add_dependency 'nokogiri', '~> 1.8.0'
 
   spec.add_development_dependency 'bundler', '~> 1.14'
   spec.add_development_dependency 'rake', '~> 10.0'
