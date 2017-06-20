@@ -33,7 +33,7 @@ class Governator
       governor = create(panel)
       puts "Scraped #{governor.official_full} of #{governor.state_name}"
     end
-    
+
     governors
   end
 
@@ -104,9 +104,6 @@ class Governator
   end
 
   def inspect
-    "#<Governator panel=#{panel} photo_url=\"#{photo_url}\" "\
-      "state_name=\"#{state_name}\" bio_page=#{bio_page} "\
-      "official_full=\"#{official_full}\" url=\"#{url}\" "\
-      "party=\"#{party}\" office_locations=\"#{office_locations}\">"
+    "#<Governator #{official_full}>"
   end
 end
