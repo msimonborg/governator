@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```
-Governator.scrape
+Governator.scrape!
 
 governors = Governator.governors
 ```
