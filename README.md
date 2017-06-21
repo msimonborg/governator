@@ -33,12 +33,12 @@ If you want to scrape Twitter handles you will need to initialize the client. Ad
 ```ruby
 Governator.config do |config|
   config.use_twitter = true
-  
+
   config.twitter do |twitter|
-    twitter.consumer_key        = YOUR_CONSUMER_KEY
+    twitter.consumer_key        = YOUR_TWITTER_CONSUMER_KEY
     twitter.consumer_secret     = YOUR_TWITTER_CONSUMER_SECRET
-    twitter.access_token        = YOUR_ACCESS_TOKEN
-    twitter.access_token_secret = YOUR_ACCESS_TOKEN_SECRET
+    twitter.access_token        = YOUR_TWITTER_ACCESS_TOKEN
+    twitter.access_token_secret = YOUR_TWITTER_ACCESS_TOKEN_SECRET
   end
 end
 ```

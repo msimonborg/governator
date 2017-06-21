@@ -9,8 +9,8 @@ Governator.config do |config|
   config.twitter do |twitter|
     twitter.consumer_key        = ENV['TWITTER_CONSUMER_KEY']
     twitter.consumer_secret     = ENV['TWITTER_CONSUMER_SECRET']
-    twitter.access_token        = ENV['ACCESS_TOKEN']
-    twitter.access_token_secret = ENV['ACCESS_TOKEN_SECRET']
+    twitter.access_token        = ENV['TWITTER_ACCESS_TOKEN']
+    twitter.access_token_secret = ENV['TWITTER_ACCESS_TOKEN_SECRET']
   end
 end
 
