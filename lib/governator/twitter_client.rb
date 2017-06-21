@@ -19,7 +19,7 @@ class Governator
     end
 
     def self.rga_list
-      @_rga_list ||= client.lists('The_RGA').detect {|l| l.name == 'GOP Governors' }
+      @_rga_list ||= client.lists('The_RGA').detect { |l| l.name == 'GOP Governors' }
     end
 
     def self.rga_list_members
@@ -27,7 +27,7 @@ class Governator
     end
 
     def self.cspan_list
-      @_cspan_list ||= client.lists('cspan').detect {|l| l.name == 'Governors' }
+      @_cspan_list ||= client.lists('cspan').detect { |l| l.name == 'Governors' }
     end
 
     def self.cspan_list_members
