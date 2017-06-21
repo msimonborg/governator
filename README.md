@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-```
+```ruby
 Governator.scrape!
 
 governors = Governator.governors
