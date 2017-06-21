@@ -1,4 +1,4 @@
-# Governator
+![Governator](http://msimonborg.com/governator/governator.png)
 
 Scraper for the data on US Governors.
 
