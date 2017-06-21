@@ -10,7 +10,7 @@ class Governator
       end
 
       def governors
-        @_governors ||= nga_list_members + rga_list_members + cspan_list_members
+        @_governors ||= nga_list_members + rga_list_members + cspan_list_members + dga_list_members
       end
 
       def nga_list
@@ -27,6 +27,14 @@ class Governator
 
       def rga_list_members
         @_rga_list_members ||= client.list_members(rga_list, count: 100).attrs[:users]
+      end
+
+      def dga_list
+        @_dga_list ||= client.lists('DemGovs').detect { |l| l.name == 'Democratic Governors' }
+      end
+
+      def dga_list_members
+        @_dga_list_members ||= client.list_members(dga_list, count: 100).attrs[:users]
       end
 
       def cspan_list
