@@ -28,7 +28,7 @@ governors = Governator.governors
 
 ## Twitter
 
-If you want to scrape Twitter handles you will need to initialize the client. Add this to your code (in a Rails app it should probably go in a file called `governator.rb` in `./config/initializers/`)
+If you want to scrape Twitter for Twitter handles (recommended for best data results) you will need to initialize the client. Add this to your code (in a Rails app it should probably go in a file called `governator.rb` in `./config/initializers/`).
 
 ```ruby
 Governator.config do |config|
@@ -42,6 +42,7 @@ Governator.config do |config|
   end
 end
 ```
+More info can be found [here](https://github.com/sferik/twitter#configuration). When configured you can access the full Twitter gem client API with `Governator.twitter_client`.
 
 As with everything, secrets should never be stored anywhere public, like version control. Set these values as variables on your system.
 
