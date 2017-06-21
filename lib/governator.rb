@@ -43,7 +43,7 @@ class Governator
     end
 
     def twitter(&block)
-      TwitterClient.client(&block)
+      TwitterClient.config(&block)
     end
 
     def use_twitter=(boolean)

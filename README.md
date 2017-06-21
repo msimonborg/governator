@@ -1,6 +1,6 @@
 ![Governator](http://msimonborg.com/governator/governator.png)
 
-Scraper for the data on US Governors.
+Scraper for data on US Governors.
 
 ## Installation
 
