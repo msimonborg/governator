@@ -5,6 +5,7 @@ require 'nokogiri'
 require 'twitter'
 
 require 'governator/bio_page'
+require 'governator/civil_services'
 require 'governator/name_parser'
 require 'governator/panel'
 require 'governator/twitter_client'
@@ -110,7 +111,15 @@ class Governator
   end
 
   def photo_url
-    @_photo_url ||= "#{BASE_URI}#{panel.image}"
+    civil_services.photo_url || BASE_URI + panel.image
+  end
+
+  def facebook
+    civil_services.facebook
+  end
+
+  def contact_form
+    civil_services.contact_form
   end
 
   private
@@ -124,18 +133,26 @@ class Governator
 
     @first, @last, @middle, @nickname, @suffix = NameParser.new(official_full).parse
     build_office_locations
-    fetch_twitter_handle if self.class.use_twitter == true
+    fetch_twitter_handle
     self
   end
 
+  def civil_services
+    @_civil_services ||= CivilServices.new(self)
+  end
+
   def fetch_twitter_handle
-    twitter_governor = TwitterClient.governors.detect do |tg|
-      tg[:name].match?(last) && (
-        tg[:location].match?(state_name) || tg[:description].match?(state_name)
-      )
+    if self.class.use_twitter == true
+      twitter_governor = TwitterClient.governors.detect do |tg|
+        tg[:name].match?(last) && (
+          tg[:location].match?(state_name) || tg[:description].match?(state_name)
+        )
+      end
+
+      @twitter = twitter_governor[:screen_name] if twitter_governor
     end
 
-    @twitter = twitter_governor[:screen_name] if twitter_governor
+    @twitter = civil_services.twitter if twitter.nil?
   end
 
   def build_office_locations
