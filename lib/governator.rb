@@ -130,9 +130,9 @@ class Governator
 
   def fetch_twitter_handle
     twitter_governor = TwitterClient.governors.detect do |tg|
-      tg[:name].match?(last) &&
-        tg[:location].match?(state_name) ||
-        tg[:description].match?(state_name)
+      tg[:name].match?(last) && (
+        tg[:location].match?(state_name) || tg[:description].match?(state_name)
+      )
     end
 
     @twitter = twitter_governor[:screen_name] if twitter_governor
