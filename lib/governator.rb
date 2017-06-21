@@ -46,6 +46,10 @@ class Governator
       TwitterClient.config(&block)
     end
 
+    def twitter_client
+      TwitterClient.client
+    end
+
     def use_twitter=(boolean)
       raise ArgumentError, 'value must be Boolean value' unless [true, false].include? boolean
       @use_twitter = boolean
