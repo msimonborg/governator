@@ -7,6 +7,7 @@ require 'twitter'
 require 'governator/bio_page'
 require 'governator/name_parser'
 require 'governator/panel'
+require 'governator/twitter_client'
 require 'governator/version'
 
 class Governator
@@ -48,8 +49,30 @@ class Governator
     governors.map(&:to_h)
   end
 
+  class << self
+    alias serialize to_json
+  end
+
+  def self.config
+    yield self
+  end
+
+  def self.twitter(&block)
+    TwitterClient.client(&block)
+  end
+
+  def self.use_twitter=(boolean)
+    raise ArgumentError, 'value must be Boolean value' unless !!boolean == boolean
+    @use_twitter = boolean
+  end
+
+  def self.use_twitter
+    @use_twitter
+  end
+
   attr_reader :panel, :state_name, :bio_page, :official_full, :first, :last,
-              :middle, :nickname, :suffix, :url, :party, :office_locations
+              :middle, :nickname, :suffix, :url, :party, :office_locations,
+              :twitter
 
   def initialize(panel)
     @panel = panel
@@ -64,7 +87,18 @@ class Governator
 
     @first, @last, @middle, @nickname, @suffix = NameParser.new(official_full).parse
     build_office_locations
+    get_twitter_handle if self.class.use_twitter == true
     self
+  end
+
+  def get_twitter_handle
+    twitter_governor = TwitterClient.governors.detect do |tg|
+      tg[:name].match?(last) &&
+      tg[:location].match?(state_name) ||
+      tg[:description].match?(state_name)
+    end
+
+    @twitter = twitter_governor[:screen_name] if twitter_governor
   end
 
   def photo_url

@@ -26,6 +26,25 @@ Governator.scrape!
 governors = Governator.governors
 ```
 
+## Twitter
+
+If you want to scrape Twitter handles you will need to initialize the client. Add this to your code (in a Rails app it should probably go in a file called `governator.rb` in `./config/initializers/`)
+
+```ruby
+Governator.config do |config|
+  config.use_twitter = true
+  
+  config.twitter do |twitter|
+    twitter.consumer_key        = YOUR_CONSUMER_KEY
+    twitter.consumer_secret     = YOUR_TWITTER_CONSUMER_SECRET
+    twitter.access_token        = YOUR_ACCESS_TOKEN
+    twitter.access_token_secret = YOUR_ACCESS_TOKEN_SECRET
+  end
+end
+```
+
+As with everything, secrets should never be stored anywhere public, like version control. Set these values as variables on your system.
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
