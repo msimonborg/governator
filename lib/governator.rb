@@ -144,8 +144,8 @@ class Governator
   def fetch_twitter_handle
     if self.class.use_twitter == true
       twitter_governor = TwitterClient.governors.detect do |tg|
-        tg[:name].match?(last) && (
-          tg[:location].match?(state_name) || tg[:description].match?(state_name)
+        tg[:name].match(last) && (
+          tg[:location].match(state_name) || tg[:description].match(state_name)
         )
       end
 

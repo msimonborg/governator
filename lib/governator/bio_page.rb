@@ -13,7 +13,7 @@ class Governator
     end
 
     def check_for_alt_office
-      @alt_office_present = if raw.css('address')[2].to_s.match?(/Phone|Address|Fax/)
+      @alt_office_present = if raw.css('address')[2].to_s.match(/Phone|Address|Fax/)
                               true
                             else
                               false
