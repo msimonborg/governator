@@ -100,14 +100,21 @@ class Governator
   end
 
   def secondary_office
-    { address: bio_page.alt_address, city: bio_page.alt_city, state: bio_page.alt_state,
-      zip: bio_page.alt_zip, phone: bio_page.alt_phone, fax: bio_page.alt_fax,
-      office_type: bio_page.alt_office_type }
+    office_hash(prefix: :alt_)
   end
 
   def primary_office
-    { address: bio_page.address, city: bio_page.city, state: bio_page.state, zip: bio_page.zip,
-      phone: bio_page.phone, fax: bio_page.fax, office_type: bio_page.office_type }
+    office_hash
+  end
+
+  def office_hash(prefix: nil)
+    hash = {}
+
+    %i[address city state zip phone fax office_type].each do |key|
+      hash[key] = bio_page.send("#{prefix}#{key}")
+    end
+
+    hash
   end
 
   def photo_url

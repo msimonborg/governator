@@ -13,7 +13,7 @@ class Governator
     end
 
     def check_for_alt_office
-      @alt_office_present = if raw.css('address')[2].to_s.match(/Phone|Address|Fax/)
+      @alt_office_present = if raw.css('address')[2].to_s =~ /Phone|Address|Fax/
                               true
                             else
                               false
@@ -52,7 +52,7 @@ class Governator
 
     def address_array
       @_address_array ||=
-        address_panel.css('p').first.text.delete("\t\n").sub('Address:', '').split(' ') - [' ']
+          address_paragraph_text(0).delete("\t\n").sub('Address:', '').split(' ') - [' ']
     end
 
     def address
@@ -60,23 +60,27 @@ class Governator
     end
 
     def city
-      @_city ||= address_panel.css('p')[1].text.delete(',')
+      @_city ||= address_paragraph_text(1).delete(',')
     end
 
     def state
-      @_state ||= address_panel.css('p')[2]&.text
+      @_state ||= address_paragraph_text(2)
     end
 
     def zip
-      @_zip ||= address_panel.css('p')[3]&.text
+      @_zip ||= address_paragraph_text(3)
     end
 
     def phone
-      @_phone ||= address_panel.css('p')[4].text.delete("\t\nPhone: ").strip.sub('/', '-')
+      @_phone ||= address_paragraph_text(4)&.delete("\t\nPhone: ").strip.sub('/', '-')
     end
 
     def fax
-      @_fax ||= address_panel.css('p')[5]&.text&.delete("\t\nFax:")&.strip&.sub('/', '-')
+      @_fax ||= address_paragraph_text(5)&.delete("\t\nFax:")&.strip&.sub('/', '-')
+    end
+
+    def address_paragraph_text(index)
+      address_panel.css('p')[index]&.text
     end
 
     def office_type
@@ -90,7 +94,7 @@ class Governator
     def alt_address_array
       return unless alt_office_present?
       @_alt_address_array ||=
-        alt_address_panel.css('p').first.text.delete("\t\n").sub('Address:', '').split(' ') - [' ']
+          alt_address_paragraph_text(0).delete("\t\n").sub('Address:', '').split(' ') - [' ']
     end
 
     def alt_building
@@ -106,25 +110,29 @@ class Governator
     end
 
     def alt_city
-      @_alt_city ||= alt_address_panel.css('p')[1].text.delete(',') if alt_office_present?
+      @_alt_city ||= alt_address_paragraph_text(1).delete(',') if alt_office_present?
     end
 
     def alt_state
-      @_alt_state ||= alt_address_panel.css('p')[2].text if alt_office_present?
+      @_alt_state ||= alt_address_paragraph_text(2) if alt_office_present?
     end
 
     def alt_zip
-      @_alt_zip ||= alt_address_panel.css('p')[3].text if alt_office_present?
+      @_alt_zip ||= alt_address_paragraph_text(3) if alt_office_present?
     end
 
     def alt_phone
       return unless alt_office_present?
-      @_alt_phone ||= alt_address_panel.css('p')[4].text.delete("\t\nPhone: ").strip.sub('/', '-')
+      @_alt_phone ||= alt_address_paragraph_text(4).delete("\t\nPhone: ").strip.sub('/', '-')
     end
 
     def alt_fax
       return unless alt_office_present?
-      @_alt_fax ||= alt_address_panel.css('p')[5]&.text&.delete("\t\nFax:")&.strip&.sub('/', '-')
+      @_alt_fax ||= alt_address_paragraph_text(5)&.delete("\t\nFax:")&.strip&.sub('/', '-')
+    end
+
+    def alt_address_paragraph_text(index)
+      alt_address_panel.css('p')[index]&.text
     end
 
     def alt_office_type

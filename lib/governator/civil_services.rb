@@ -20,9 +20,11 @@ class Governator
     end
 
     def facebook
-      if record && record['facebook_url']
-        @_facebook ||= record['facebook_url'].sub('https://www.facebook.com/', '')
-      end
+      @_facebook ||= record['facebook_url'].sub('https://www.facebook.com/', '') if facebook_url?
+    end
+
+    def facebook_url?
+      record && record['facebook_url']
     end
 
     def photo_url
