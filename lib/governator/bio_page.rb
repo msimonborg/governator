@@ -52,7 +52,7 @@ class Governator
 
     def address_array
       @_address_array ||=
-          address_paragraph_text(0).delete("\t\n").sub('Address:', '').split(' ') - [' ']
+        address_paragraph_text(0).delete("\t\n").sub('Address:', '').split(' ') - [' ']
     end
 
     def address
@@ -94,7 +94,7 @@ class Governator
     def alt_address_array
       return unless alt_office_present?
       @_alt_address_array ||=
-          alt_address_paragraph_text(0).delete("\t\n").sub('Address:', '').split(' ') - [' ']
+        alt_address_paragraph_text(0).delete("\t\n").sub('Address:', '').split(' ') - [' ']
     end
 
     def alt_building

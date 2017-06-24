@@ -7,6 +7,7 @@ require 'twitter'
 require 'governator/bio_page'
 require 'governator/civil_services'
 require 'governator/name_parser'
+require 'governator/office'
 require 'governator/panel'
 require 'governator/twitter_client'
 require 'governator/version'
@@ -29,6 +30,7 @@ class Governator
 
       governors
     end
+    alias governate! scrape!
 
     def governors
       @_governors ||= []
@@ -85,14 +87,10 @@ class Governator
   end
 
   def to_h
-    {
-      photo_url: photo_url,
-      state_name: state_name,
-      official_full: official_full,
-      url: url,
-      party: party,
-      office_locations: office_locations
-    }
+    syms =  %i[photo_url state_name official_full url party office_locations]
+    syms.each_with_object({}) do |sym, hsh|
+      hsh[sym] = send(sym)
+    end
   end
 
   def inspect
@@ -100,21 +98,18 @@ class Governator
   end
 
   def secondary_office
-    office_hash(prefix: :alt_)
+    @_secondary_office ||= office(prefix: :alt_)
   end
 
   def primary_office
-    office_hash
+    @_primary_office ||= office
   end
 
-  def office_hash(prefix: nil)
-    hash = {}
-
-    %i[address city state zip phone fax office_type].each do |key|
-      hash[key] = bio_page.send("#{prefix}#{key}")
+  def office(prefix: nil)
+    syms = %i[address city state zip phone fax office_type]
+    syms.each_with_object(Office.new) do |sym, office|
+      office[sym] = bio_page.send("#{prefix}#{sym}")
     end
-
-    hash
   end
 
   def photo_url
