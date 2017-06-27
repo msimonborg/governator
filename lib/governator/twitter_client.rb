@@ -8,6 +8,9 @@ class Governator
 
       def config(&block)
         @client = Twitter::REST::Client.new(&block)
+      rescue NameError
+        raise RuntimeError, 'set `use_twitter` configuration option to true if you '\
+          ' wish to configure and use a Twitter client'
       end
 
       def governors

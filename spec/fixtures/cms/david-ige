@@ -1,0 +1,793 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<!--omitFormatting for removing clear divs section -->
+
+    
+<html lang="en">
+	<head>
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	    
+            <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+        
+	      <meta name="author" content="khastings"/>
+	    
+    
+	  	<link rel="shortcut icon" href="/modules/nga-responsive-template/images/NGAfav24x24.png" type="image/png">
+	  	<link rel="icon" href="/modules/nga-responsive-template/images/NGAfav24x24.png" type="image/png">
+		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' type='text/css'>
+		<noscript>This site utilizes JavaScript to enhance the user interface and productivity for users. Ensure you have
+      		Java Script enabled in your browser to take full advantage.
+    	</noscript>	  	
+    	
+    	<title>David Ige</title>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+	  <style>
+	  	.breadcrumb{
+	  		font-size: small !important;
+	  	}
+	  	
+	  </style>
+	
+
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+
+ _gaq.push(['_setAccount', 'UA-1090897-1']);
+  _gaq.push(['_trackPageview', '/cms/render/live/en/sites/NGA/home/governors/current-governors/col2-content/main-content-list/david-ige.html']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+<script type="text/javascript">
+var contextJsParameters={contextPath:"",lang:"en",uilang:"en",siteUuid:"503c9ef4-c525-4cc1-8128-e3bc220ff9cc",wcag:true,ckeCfg:""}; var CKEDITOR_BASEPATH="/modules/ckeditor/javascript/"; var scayt_custom_params=new Array(); scayt_custom_params['sLang']='en_US';
+</script>
+<link id="staticAssetCSS0" rel="stylesheet" href="/generated-resources/2873739a8a7ef573da9d782d24541c8.min.css" media="screen" type="text/css"/>
+<script id="staticAssetJavascript0" type="text/javascript" src="/generated-resources/de323125bdc73b9dc9ac12a71ae2aa2.min.js"></script>
+<script type="text/javascript">
+    window.digitalData = {
+        "scope" : "NGA",
+        "site" : {
+            "siteInfo":{
+                "siteID": "503c9ef4-c525-4cc1-8128-e3bc220ff9cc"
+            }
+        },
+        "page" : {
+            "pageInfo": {
+                "pageID": "6b15b470-5541-43c8-9bfd-adffa5a31e43",
+                "pageName": "David Ige",
+                "pagePath": "/sites/NGA/home/governors/current-governors/col2-content/main-content-list/david-ige",
+                "destinationURL": document.location.href,
+                "referringURL": "null",
+                "language": "en"
+            },
+            "category":{
+            },
+            "attributes":{
+            }
+        },
+        "contextServerPublicUrl" : "https://mf.nga.org:443"
+    };
+
+    wem.init('https://mf.nga.org:443','57ae1a6d-c17c-4abd-8dff-d525bb8aff0e', false);
+  </script>
+
+
+        <script type="text/javascript">
+          $(document).ready(function () {
+            $('a').each(function (index) {
+              var href = this.href;
+              if (href != null) {
+                if (href.toLowerCase().indexOf('.pdf') != -1) {
+                  //                            this.href = "#";
+                  $(this).bind('click', function () {
+                    //console.log($(this).text());
+                    _gaq.push(['_trackPageview', href]);
+                    
+                    
+                  });
+                }
+              }
+            });
+          });
+        </script>
+      
+<script id="staticAssetAggregatedJavascriptList0" type="text/javascript">
+var jASAJ=jASAJ || new Array();
+jASAJ.push('/modules/nga-responsive-template/javascript/jquery-1.11.3.js');
+jASAJ.push('/modules/nga-responsive-template/javascript/jquery-validate.js');
+jASAJ.push('/modules/nga-responsive-template/javascript/additional-methods.min.js');
+jASAJ.push('/modules/nga-responsive-template/javascript/bootstrap.js');
+jASAJ.push('/modules/nga-responsive-template/javascript/owl.carousel.min.js');
+jASAJ.push('/modules/nga-responsive-template/javascript/custom-script.js');
+jASAJ.push('/modules/marketing-factory-core/javascript/wem.js');
+</script>
+
+</head>
+	<body>
+		<header>
+	    	<div class="container-fluid">
+	        	<div class="row header">
+	            	<div class="col-xs-6 logo-wrap">
+	               		<div class="logo">
+	                    	<a href="/cms/home"><img src="/modules/nga-responsive-template/images/NGAlogo.png" alt="NGA"></a>
+	                	</div>
+	                </div>
+	                <div class="col-xs-6 nav-wrap">
+						<div class="quick-nav">
+		<!-- search section -->
+			<div class="search-wrap">
+				<a href="#" class=""><i class="fa fa-search fa-2x"></i></a>
+				
+<form name="searchnga" action="/cms/home/searchResults.html" role="search" class="form-searchnga" method="get" >
+    <input type="hidden" name="jcrMethodToCall" value="get" />
+    <input type="hidden" name="src_originSiteKey" value="NGA"/>
+    <input type="hidden" name="src_nodeType" value="jmix:editorialContent"/>
+<input id="search-input" style="display: block; width: 0px;" placeholder="Search NGA for..." name="src_terms[0].term" class="search-field" type="text"  value=""/>
+<input type="hidden" name="src_terms[0].applyFilter" value="true"/>
+
+    <input type="hidden" name="src_terms[0].match" value="all_words"/>
+
+    <input type="hidden" name="src_terms[0].fields.siteContent" value="true"/>
+
+    <input type="hidden" name="src_terms[0].fields.tags" value="true"/>
+
+    <input type="hidden" name="src_terms[0].fields.files" value="true"/>
+<input type="hidden" name="src_sites.values" value="NGA"/>
+    <input type="hidden" name="src_sitesForReferences.values" value="systemsite"/>
+<input type="hidden" name="src_languages.values" value="en"/>
+		            <input type="hidden" name="src_pagePath.value" value="/sites/NGA/home"/>
+		            <input type="hidden" name="src_pagePath.valueView" value="Home"/>
+		            <input type="hidden" name="src_pagePath.includeChildren" value="true"/>
+		            <input name="search-go" type="submit" value="go" class="search-button" id="" style="display:none;"/>
+		        
+</form>
+			</div>
+		 <!-- search section -->
+	</div>
+
+
+<script>
+  $(document).ready(function(){
+    $('#search-input').keypress(function (e) {    
+      if ((e.which >= 33 && e.which <= 39) || (e.which >= 40 && e.which <= 46) || (e.which >= 58 && e.which <= 64) || e.which == 94) { 
+          $(this).css("border-color","#960000");   
+          return false;
+      }
+      else{
+    	  if( $(this).val().length > 80  ){
+    		  $(this).css("border-color","#960000");   
+              return false;
+    	  }else{
+    		  
+    	  }
+      }
+  });
+  });
+</script>
+	            	</div>
+	        	</div>
+	      	</div>
+	        <!--Navigation section -->
+	        <div class="container-fluid">
+	            <div class="row">
+	                <div class="col-xs-12 primary-nav">
+						<nav class="navbar navbar-default" role="navigation">
+		<div class="navbar-header">
+		     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example-navbar-collapse">
+		         <span class="icon-bar"></span>
+		         <span class="icon-bar"></span>
+		         <span class="icon-bar"></span>
+		     </button>
+		 </div>
+		 <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav">
+    
+                           		 <li class="dropdown">
+                           			<a class="dropdown-toggle" role="button"  href="/cms/home.html">Home<!-- i class="fa fa-home fa-2x"></i> --></a>
+                           		 	<span class="fa fa-fw"></span>
+                           		 </li>
+                           	
+	                        <li class="dropdown">
+		                     
+			                        <a class="dropdown-toggle" role="button" href="/cms/governors" >Governors
+			                        </a>
+			                        <ul id="" class="dropdown-menu">
+				                        <li>
+	                               <a class=""
+	                                  href="/cms/governors/bios">Current Governors</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/FormerGovBios">Former Governors&#039; Bios</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/governors/spouses">Current Governors&#039; Spouses</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/opeds">Opinion Articles</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/meetings">NGA Summer &amp; Winter Meetings</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/chairs">Initiatives of NGA Chairs</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/elections">Elections</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/governors/directories">Staff Directories &amp; Contact Information </a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="http://www.nga.org/files/live/sites/NGA/files/pdf/COMMITTEELIST.PDF"target="_blank">NGA Leadership</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/management">Management Resources</a>
+	                            </li>
+			                        </ul>
+			                        <span class="fa fa-plus menu-arrow"></span>
+			                 </li>       
+	                    
+	                        <li class="dropdown">
+		                     
+			                        <a class="dropdown-toggle" role="button" href="/cms/government-relations" >Government Relations
+			                        </a>
+			                        <ul id="" class="dropdown-menu">
+				                        <li>
+	                               <a class=""
+	                                  href="/cms/ogr/committees">NGA Committees</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/ogr/policy-positions">NGA Policy Positions</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/ogr/letters">NGA Letters</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/ogr/testimony">NGA Testimony</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="http://www.nga.org/files/live/sites/NGA/files/pdf/COMMITTEELIST.PDF"target="_blank">NGA Leadership</a>
+	                            </li>
+			                        </ul>
+			                        <span class="fa fa-plus menu-arrow"></span>
+			                 </li>       
+	                    
+	                        <li class="dropdown">
+		                     
+			                        <a class="dropdown-toggle" role="button" href="/cms/news" >News
+			                        </a>
+			                        <ul id="" class="dropdown-menu">
+				                        <li>
+	                               <a class=""
+	                                  href="/cms/news-stories">News</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/newsroom/videos">Audio &amp; Video</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/webcast">Webcast Center</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/newsroom/photos">Photos</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/home/news-room/publications.html">Publications</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/meetings">NGA Summer &amp; Winter Meetings</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/home/news-room/nga-newsletter.html">NGA Newsletter</a>
+	                            </li>
+			                        </ul>
+			                        <span class="fa fa-plus menu-arrow"></span>
+			                 </li>       
+	                    
+	                        <li class="dropdown">
+		                     
+			                        <a class="dropdown-toggle" role="button" href="/cms/center" >NGA Center for Best Practices
+			                        </a>
+			                        <ul id="" class="dropdown-menu">
+				                        <li>
+	                               <a class=""
+	                                  href="/cms/center-divisions">Center Divisions</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/center/publications">Center Publications</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/center/meetings">Meeting Materials</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/center/fc">Front &amp; Center Newsletters</a>
+	                            </li>
+			                        </ul>
+			                        <span class="fa fa-plus menu-arrow"></span>
+			                 </li>       
+	                    
+	                        <li class="dropdown">
+		                     
+			                        <a class="dropdown-toggle" role="button" href="/cms/about" >About
+			                        </a>
+			                        <ul id="" class="dropdown-menu">
+				                        <li>
+	                               <a class=""
+	                                  href="/cms/meetings">NGA Summer &amp; Winter Meetings</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/chairs">Initiatives of NGA Chairs</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/corporate-fellows">Corporate Fellows</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/staff-directory">Staff Directory</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/expert-profiles">NGA Expert Profiles</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/careers">Careers</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/financial-statements">Financial Statements</a>
+	                            </li>
+                           	
+                           		<li>
+	                               <a class=""
+	                                  href="/cms/home/about/faq.html">FAQ</a>
+	                            </li>
+			                        </ul>
+			                        <span class="fa fa-plus menu-arrow"></span>
+			                 </li>       
+	                    
+	</ul>
+    </div>
+	</nav>
+	              </div>
+	          </div>
+	      </div> 
+	    </header>
+      
+	  	
+
+    <div class="container bannerWrap">
+
+    <div class="row">
+
+    </div>
+
+    </div><main>
+	
+
+
+    <div class="container">
+
+
+    <div class="row">
+<div class="col-xs-12 breadcrumb-wrap"><ul class="breadcrumb">
+        
+                <li>
+                    
+                            <a href="/cms/home">
+                                National Governors Association
+                            </a>
+                        
+                </li>
+            
+                <li>
+                    
+                            <a href="/cms/governors">
+                                Governors
+                            </a>
+                        
+                </li>
+            
+                <li>
+                    
+                            <a href="/cms/governors/bios">
+                                Current Governors
+                            </a>
+                        
+                </li>
+            
+<!--             <li> -->
+
+<!--                     </a> -->
+
+<!--             </li> -->
+
+    </ul>
+            </div>
+    </div>
+
+    <div class="row">
+
+
+
+    <section class="content-wrap">
+<h2 class="pageTitle">
+        Governor David Ige
+    </h2>
+    </section>
+    </div>
+    </div>
+
+
+    <div>
+
+    <div class="container">
+
+    <div class="row">
+
+    </div>
+
+    </div>
+
+    </div>
+
+
+    <div class="profile-wrap">
+
+    <div class="container">
+
+    <div class="row">
+<script src="/modules/nga-responsive/javascript/text-sizer.js"></script>
+
+<div class="printtool">
+	<div class="pull-right">
+		<div class="page"><a href="javascript:window.print()"><i class="fa fa-print"></i></a></div>
+		<div class="font-wrap" id="fontChoose">
+			<a href="#" id="font-dec" rel="normalview" title="normal size" data-type="dec" class="fontChangeBtn">- <i class="fa fa-font"></i></a>
+			<a href="#" id="font-df" rel="largeview" title="large size" data-type="default" class="fontChangeBtn"><i class="fa fa-font"></i></a>
+		    <a href="#" id="font-in" rel="xlargeview" title="extra large size" data-type="inc" class="fontChangeBtn"><i class="fa fa-font"></i>+</a>
+		</div>
+	</div>
+</div><article>
+	<div class="row">
+		<div class="col-md-2">
+			<div class="content-wrap">
+				
+						<img src="/files/live/sites/NGA/files/images/govportraits/HI-DavidIge.jpg" alt="Hawaii Governor David  Ige " id="" class="feature-img"
+							title=""
+							border="1" height="130" width="100" />
+					
+			</div>
+			<div class="ullist-wrap">
+				<ul>
+					
+						<li><i class="fa fa-angle-double-right"></i> <a
+							href="http://governor.hawaii.gov/"
+							target="_blank"> Governor's Website </a></li>
+					
+						<li><i class="fa fa-angle-double-right"></i> <a
+							href="http://www.ehawaii.gov/dakine/index.html"
+							target="_blank"> State Website</a></li>
+					
+				</ul>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<div class="container-fluid">
+				<address>
+					<p>
+						
+							<strong>Office Dates:</strong>&nbsp;
+	                        Dec 01, 2014
+							- 
+		                  	
+					</p>
+					<p>
+						
+					</p>
+					<p>
+						
+					</p>
+					<p>
+						
+					</p>
+					<div class="col-xs-12">
+ <address>
+ 	<p><strong>Address:</strong>
+ 		 Executive Chambers <br>
+ 		 State Capitol
+     </p>
+     	
+   	<p>Honolulu,</p>
+      <p>HI</p>
+      <p>96813</p>
+        
+ 	
+     <hr>
+     
+     	<p><strong>Phone</strong>
+     	808/586-0034</p>
+    
+    	<p><strong>Fax:</strong>808/586-0006</p>
+    
+ </address>
+</div>
+					<p>
+						
+					</p>
+					
+				</address>
+			</div>
+		</div>
+		<div class="col-md-7">
+			<div class="container-fluid">
+				<address>
+					
+						<p>
+							<strong>Born:</strong>&nbsp;
+							Jan 15, 1957
+						</p>
+					
+						<p>
+							<strong>Birth State:</strong>&nbsp;
+							Hawaii
+						</p>
+					
+						<p>
+							<strong>Party:</strong>&nbsp;
+							Democrat
+						</p>
+					
+						<p>
+							<strong>Spouse:</strong>&nbsp;
+							
+									<a href="/cms/dawn-amano-ige"
+										title="Dawn  Amano-Ige">Dawn  Amano-Ige</a>
+								
+						</p>
+					
+						<p>
+							<strong>Family:</strong>&nbsp;
+							Married Dawn Amano-Ige; three children
+						</p>
+					
+						<p>
+							<strong>School(s):</strong>&nbsp;
+							University of Hawaii, Manoa
+						</p>
+					
+					<p>
+						
+					</p>
+					
+					
+				</address>
+			</div>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-12"><hr></div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			<div class="content-wrap">
+				<p>
+	David Ige was sworn in as governor of Hawaii on December 1, 2014.&nbsp;</p>
+<p>
+	Ige was born and raised in Pearl City, Hawaii. He attended the University of Hawaii at Manoa and earned a bachelor&rsquo;s degree in electrical engineering and a MBA in decisions sciences.</p>
+<p>
+	Ige spent 34 years as an electrical engineer devoted to information technology, telecommunications, networks and developing responsible public policy.</p>
+<p>
+	Ige began his political career in 1985 after being appointed by then Governor George Ariyoshi to fill a vacant seat in the Hawai&lsquo;i House of Representatives.&nbsp; In 1994, he was elected to the Hawai&lsquo;i State Senate where he represented his home district of &lsquo;Aiea / Pearl City until 2014.&nbsp;</p>
+<p>
+	Ige and his wife, Dawn have three children, Lauren, Amy and Matthew.</p>
+
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12">
+			
+		</div>
+	</div>
+</article>
+    </div>
+
+    </div>
+
+    </div>
+</main>
+	  	
+	  	<footer>
+			
+
+    <div class="container footer">
+
+    <div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<div class="copyright">
+<p><strong>National Governors Association</strong></p>
+
+<p>&copy; copyright 2015.<br />
+All Right Reserved.</p>
+
+<p>
+<a href="https://www.facebook.com/nationalgovernorsassociation" target="_blank" title="Facebook"><i class="fa fa-facebook-square fa-2x">&nbsp;</i></a>
+ <a href="https://twitter.com/NatlGovsAssoc" target="_blank" title="Twitter"><i class="fa fa-twitter-square fa-2x">&nbsp;</i></a>
+ <a href="https://www.instagram.com/governors_nga/" target="_blank" title="Instagram"><i class="fa fa-instagram fa-2x">&nbsp;</i></a>
+ <a href="https://www.youtube.com/channel/UCPk5LFlePYG_NVBOcjZC5Qg" target="_blank" title="YouTube"><i class="fa fa-youtube-play fa-2x">&nbsp;</i></a>
+ <a href="https://www.linkedin.com/company-beta/24367/" target="_blank" title="LinkedIn"><i class="fa fa-linkedin-square fa-2x">&nbsp;</i></a></p>
+</div>
+</div>
+
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+<address>
+<p><strong>Phone:</strong> (202) 624-5300</p>
+
+<p><strong>Fax:</strong> (202) 624-5313</p>
+
+<p><strong>Email:</strong> <a href="mailto:webmaster@nga.org?Subject=www.nga.org" title="webmaster email">webmaster</a></p>
+</address>
+</div>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+
+    <div class="container-fluid">
+
+    <div class="row">
+<div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><ul>
+	
+				<li>
+						<a href="/cms/home.html" >Home</a>
+					</li>
+			
+				<li>
+						<a href="/cms/governors" >Governors</a>
+					</li>
+			
+				<li>
+						<a href="/cms/government-relations" >Government Relations</a>
+					</li>
+			
+				<li>
+						<a href="/cms/news" >News</a>
+					</li>
+			
+				<li>
+						<a href="/cms/center" >NGA Center for Best Practices</a>
+					</li>
+			
+</ul>
+            </div>
+        
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6"><ul>
+	
+				<li>
+						<a href="/cms/about" >About</a>
+					</li>
+			
+				<li>
+						<a href="/cms/home/news-room/publications.html" >Publications</a>
+					</li>
+			
+				<li>
+						<a href="/cms/home/special.html" >NGA Publications</a>
+					</li>
+			
+				<li>
+						<a href="/cms/management" >Management Resources</a>
+					</li>
+			
+				<li>
+						<a href="/cms/careers" >Careers</a>
+					</li>
+			
+				<li>
+						<a href="/cms/corporate-fellows" >Corporate Fellows</a>
+					</li>
+			
+				<li>
+						<a href="/cms/sitemap" >Site Map</a>
+					</li>
+			
+</ul>
+            </div>
+    </div>
+
+    </div><!-- 
+	<div>No pages to be displayed.</div>
+ -->
+            </div>
+    </div>
+
+    </div>
+	    </footer>
+	</body>
+
+    
+
+</html>

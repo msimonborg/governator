@@ -9,10 +9,11 @@ class Governator
       def use_twitter=(boolean)
         raise ArgumentError, 'value must be Boolean value' unless [true, false].include? boolean
         @use_twitter = boolean
+        require 'twitter' if use_twitter?
       end
 
       def use_twitter?
-        @use_twitter
+        @use_twitter || false
       end
 
       def twitter(&block)

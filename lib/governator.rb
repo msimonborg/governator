@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-require 'faraday'
 require 'nokogiri'
-require 'twitter'
+require 'open-uri'
 
 require 'governator/bio_page'
 require 'governator/civil_services'
 require 'governator/config'
 require 'governator/governor'
+require 'governator/http_client'
 require 'governator/name'
 require 'governator/name_parser'
 require 'governator/office'
@@ -18,10 +18,9 @@ require 'governator/version'
 # Governator.scrape!
 # governors = Governor.governors
 class Governator
-  BASE_URI = 'https://www.nga.org'
-  CONN = Faraday.new(url: BASE_URI)
-
   class << self
+    include HTTPClient
+
     def scrape!
       governors.clear
       panels.each do |panel|
@@ -52,7 +51,7 @@ class Governator
     private
 
     def index_page
-      @_index_page ||= Nokogiri::HTML(Governator::CONN.get('/cms/governors/bios').body)
+      @_index_page ||= Nokogiri::HTML get_page_contents('/cms/governors/bios')
     end
 
     def panels

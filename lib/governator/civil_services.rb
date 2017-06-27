@@ -1,12 +1,18 @@
 # frozen_string_literal: true
 
+require 'governator/http_client'
+
 class Governator
   class CivilServices
+    extend HTTPClient
+
     def self.json
-      @_json ||= JSON.parse Faraday.get(
-        'https://raw.githubusercontent.com/CivilServiceUSA/us-governors'\
-          '/master/us-governors/data/us-governors.json'
-      ).body
+      @_json ||= JSON.parse get_page_contents(uri)
+    end
+
+    def self.uri
+      @_uri ||= 'https://raw.githubusercontent.com/CivilServiceUSA/us-governors'\
+        '/master/us-governors/data/us-governors.json'
     end
 
     attr_reader :governor

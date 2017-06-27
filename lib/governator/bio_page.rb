@@ -1,15 +1,18 @@
 # frozen_string_literal: true
 
+require 'governator/http_client'
 require 'governator/page_scraper'
 
 class Governator
   # Scrapes the biographical page for an individual Governor
   class BioPage < PageScraper
+    include HTTPClient
+
     attr_reader :uri
 
     def initialize(uri)
       @uri = uri
-      @raw = Nokogiri::HTML(CONN.get(uri).body)
+      @raw = Nokogiri::HTML get_page_contents(uri)
       check_for_alt_office
     end
 
