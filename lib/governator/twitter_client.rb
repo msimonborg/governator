@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 class Governator
+  # Wrapper for the Twitter client with convenience methods
   class TwitterClient
     class << self
       attr_reader :client

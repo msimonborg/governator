@@ -3,6 +3,7 @@
 require 'governator/page_scraper'
 
 class Governator
+  # Scrapes the biographical page for an individual Governor
   class BioPage < PageScraper
     attr_reader :uri
 
@@ -13,11 +14,8 @@ class Governator
     end
 
     def check_for_alt_office
-      @alt_office_present = if raw.css('address')[2].to_s =~ /Phone|Address|Fax/
-                              true
-                            else
-                              false
-                            end
+      @alt_office_present =
+        raw.css('address')[2].to_s =~ /Phone|Address|Fax/ ? true : false
     end
 
     def alt_office_present?
@@ -29,11 +27,7 @@ class Governator
     end
 
     def party_panel
-      @_party_panel ||= if alt_office_present?
-                          raw.css('address')[3]
-                        else
-                          raw.css('address')[2]
-                        end
+      @_party_panel ||= alt_office_present? ? raw.css('address')[3] : raw.css('address')[2]
     end
 
     def party_paragraph
@@ -72,7 +66,7 @@ class Governator
     end
 
     def phone
-      @_phone ||= address_paragraph_text(4)&.delete("\t\nPhone: ").strip.sub('/', '-')
+      @_phone ||= address_paragraph_text(4)&.delete("\t\nPhone: ")&.strip&.sub('/', '-')
     end
 
     def fax

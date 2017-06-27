@@ -39,7 +39,7 @@ class Governator
 
     def record
       @_record ||= self.class.json.detect do |record|
-        record['last_name'] == governor.last && record['state_name'] == governor.state_name
+        record['last_name'] == governor.last_name && record['state_name'] == governor.state_name
       end
     end
   end
