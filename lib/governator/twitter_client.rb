@@ -15,6 +15,9 @@ class Governator
 
       def governors
         @_governors ||= nga_list_members + rga_list_members + cspan_list_members + dga_list_members
+      rescue Twitter::Error::BadRequest => error
+        puts error, error.message, caller
+        retry
       end
 
       def nga_list
