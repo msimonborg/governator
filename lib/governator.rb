@@ -18,6 +18,8 @@ require 'governator/version'
 # Governator.scrape!
 # governors = Governor.governors
 class Governator
+  BASE_URI = 'https://www.nga.org/'.freeze
+  
   class << self
     include HTTPClient
 
