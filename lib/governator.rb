@@ -23,16 +23,35 @@ class Governator
   class << self
     include HTTPClient
 
+    # Scrapes the NGA website for governor data and returns an array of Governor objects
     def scrape!
       governors.clear
-      panels.each do |panel|
-        governor = Governator::Governor.create(panel)
-        puts "Scraped #{governor.official_full} of #{governor.state_name}"
-      end
-
+      panels.each { |panel| scrape_governor(panel) }
       governors
     end
     alias governate! scrape!
+
+    # Scrapes data for each thumbnail on the index page, and creates a Governor object
+    def scrape_governor(panel)
+      tries ||= 0
+      governor = Governator::Governor.create(panel)
+      puts "Scraped #{governor.official_full} of #{governor.state_name}"
+
+    # Sometimes NGA website returns 504 Gateway errors for an unkown reason.
+    # This will raise an exception unless handles. Usually retrying the query
+    # will resolve the issue.
+    rescue OpenURI::HTTPError => error
+
+      # Raise any HTTPErrors that are not specifically a 504 Gateway Time-out 
+      raise error unless error.message == '504 Gateway Time-out'
+
+      # Print error status to the console
+      puts "Encountered error: #{error}. Trying again"
+
+      # Allow up to 5 tries before giving up and moving on
+      tries += 1
+      tries < 5 ? retry : puts("Persistent error, moving on to the next one")
+    end
 
     def governors
       @_governors ||= []
