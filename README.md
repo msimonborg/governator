@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-Governator.scrape!
+Governator.scrape! # or Governator.governate!
 
 governors = Governator.governors
 ```

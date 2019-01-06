@@ -53,11 +53,11 @@ class Governator
     private
 
     def index_page
-      @_index_page ||= Nokogiri::HTML get_page_contents('/cms/governors/bios')
+      @_index_page ||= Nokogiri::HTML get_page_contents('governors-2')
     end
 
     def panels
-      @_panels ||= index_page.css('.panel.panel-default.governors').map do |panel|
+      @_panels ||= index_page.css('.bklyn-team-member').map do |panel|
         Governator::Panel.new(panel)
       end
     end

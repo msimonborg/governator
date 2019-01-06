@@ -5,15 +5,15 @@ require 'governator/page_scraper'
 class Governator
   class Panel < PageScraper
     def image
-      @_image ||= raw.css('.governors-img img').first['src']
+      @_image ||= raw.css('.bklyn-team-member-avatar img').first['src']
     end
 
     def bio_page
-      @_bio_page ||= raw.css('.governors-state a').first['href']
+      @_bio_page ||= raw.css('a').first['href']
     end
 
     def governor_name
-      @_governor_name ||= raw.css('.governors-state a')
+      @_governor_name ||= raw.css('a .bklyn-team-member-description')
                              .first
                              .text
                              .sub('Governor ', '')
@@ -21,7 +21,7 @@ class Governator
     end
 
     def state
-      state = raw.css('.governors-state h3').first.text
+      state = raw.css('a .bklyn-team-member-name').first.text
       case state
       when 'Northern Mariana Islands' then 'Commonwealth of the ' + state
       when 'Virgin Islands' then 'United States ' + state
