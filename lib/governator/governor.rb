@@ -42,7 +42,7 @@ class Governator
     end
 
     def photo_url
-      civil_services.photo_url || Governator::BASE_URI + panel.image
+      civil_services.photo_url || panel.image
     end
 
     def facebook
