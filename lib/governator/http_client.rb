@@ -14,7 +14,7 @@ class Governator
     end
 
     def base_uri
-      @base_uri ||= 'https://www.nga.org'
+      @base_uri ||= Governator::BASE_URI
     end
   end
 end
